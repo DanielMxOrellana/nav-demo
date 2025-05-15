@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <strong>Estás en el Dashboard</strong>
+    <p>Elige una opción de navegación:</p>
+
+    <ion-button expand="block" (click)="goBack()">
+      Volver (atrás)
+    </ion-button>
+
+    <ion-button expand="block" color="danger" (click)="goToHome()">
+      Ir a Home (evita historial)
+    </ion-button>
+  </div>
+</ion-content>

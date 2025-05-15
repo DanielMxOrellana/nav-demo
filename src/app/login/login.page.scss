@@ -1,0 +1,40 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #121212; // Fondo oscuro
+
+  ion-content {
+    --background: #121212;
+    color: #ffffff;
+    padding: 2rem;
+  }
+
+  .login-container {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: #cccccc;
+  }
+
+  ion-button {
+    --background: #3880ff;
+    --color: #ffffff;
+    --border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+  }
+}
