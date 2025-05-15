@@ -1,33 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NavController, IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import {
-  IonContent,
-  IonHeader,
-  IonTitle,
-  IonToolbar,
-  IonButton
-} from '@ionic/angular/standalone';
-import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.page.html',
   styleUrls: ['./dashboard.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, IonButton, CommonModule, FormsModule]
+  imports: [IonicModule, CommonModule],
 })
-export class DashboardPage implements OnInit {
-
+export class DashboardPage {
   constructor(private navCtrl: NavController) {}
-
-  ngOnInit() {}
 
   goBack() {
     this.navCtrl.back();
   }
 
   goToHome() {
-    this.navCtrl.navigateRoot('/home');
+    console.log('Navegando a login como root...');
+    this.navCtrl.navigateRoot('/login'); // Cambia '/login' si tu ruta base es otra
   }
 }
