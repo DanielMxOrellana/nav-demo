@@ -1,0 +1,7 @@
+{
+  "name": "nav-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
